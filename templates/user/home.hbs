@@ -1,0 +1,16 @@
+{{> header}}
+    <h1 class="text-center" id="base-text">First cooking project</h1>
+    {{#if isLoggedIn}}
+    <p class="lead">"Your body is not a temple, it's an amusement park. Enjoy the ride."
+          </p>
+          <p class="ABName">- Anthony Bourdain</p>
+
+    {{else}}
+        <main role="main" class="inner cover mt-5">
+          {{!-- <h1 class="cover-heading">Cooking by Kuzmov</h1> --}}
+          <p class="lead">"Your body is not a temple, it's an amusement park. Enjoy the ride."
+          </p>
+          <p class="ABName">- Anthony Bourdain</p>
+        </main>
+    {{/if}}
+{{> footer}}
