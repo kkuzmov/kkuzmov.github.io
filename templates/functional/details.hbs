@@ -3,10 +3,11 @@
             <div class="col-md-12">
                 <div class="recepieInfo">
                     <div class="detailsFoodImage">
-                        <img src="{{ currRecipe.foodImageURL }}"
+                        <img id="imageOne" src="{{ currRecipe.foodImageURL }}"
                             alt="">
+                    <button class="btn-change-pic" id="change-pic-left" onclick="clickLeft()"><</button>
+                    <button class="btn-change-pic" id="change-pic-right" onclick="clickRight()">></button>
                     </div>
-                    
                     <div class="infoPack">
                         <h3 class="my-3">{{ currRecipe.meal }}</h3>
                          <div class="divCookScale"> 
@@ -38,3 +39,15 @@
             </div>
         </div>
   {{> footer}}
+<script>
+    function clickLeft(e){
+        console.log('clicked left!')
+        let im=document.getElementById('imageOne');
+        im.setAttribute('src', `{{ currRecipe.foodImageURL }}`);
+        }
+    function clickRight(e){
+        console.log('clicked right!')
+        let im=document.getElementById('imageOne');
+        im.setAttribute('src', `https://ichef.bbci.co.uk/news/976/cpsprodpb/ED96/production/_113922806_2016.33l.jpg`);
+    }
+</script>
