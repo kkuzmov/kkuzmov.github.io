@@ -28,6 +28,8 @@ html, body {
   background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/garlic-head-on-a-wooden-rustic-table-picjumbo-com.jpg');
   background-attachment: fixed;
   background-size:unset;
+  font-family: 'Neucha', cursive;
+  font-size: 1.1em;
   /* background-color:#ffe6005b;
   background-blend-mode:darken; */
 }
@@ -43,7 +45,7 @@ body {
 }
 
 .cover-container {
-  max-width: 42em;
+  max-width: 50em;
 }
 
 /*
@@ -265,12 +267,12 @@ form textarea {
 
 .detailsFoodImage {
   display: inline-block;
-  width: 69%;
+  width: 300px;
   margin-right: 1%;
 }
 
 .detailsFoodImage img {
-  width: 350px;
+  width: 25em;
   height: auto;
   border: 1px solid white;
 }
@@ -563,4 +565,17 @@ how to remove the virtical space around the range input in IE*/
 .recipesDropdown:hover .dropdown{
   display: block;
   
+}
+.lead{
+  font-family: 'Parisienne', cursive;
+  font-size: 2em;
+  margin: 15px auto;
+}
+.allCategories{
+  text-align: center;
+}
+.btn-change-pic{
+  display: inline-block;
+  position: relative;
+  left: 150px;
 }
