@@ -25,8 +25,10 @@ a, a:focus, a:hover {
 html, body {
   height: 100%;
   width: 100%;
-  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/homePage-background.jpg');
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/garlic-head-on-a-wooden-rustic-table-picjumbo-com.jpg');
   background-attachment: fixed;
+  /* background-color:#ffe6005b;
+  background-blend-mode:darken; */
 }
 
 body {
