@@ -277,6 +277,6 @@ export function notify(message, notifId) {
 export function timeout(context, page) {
   return setTimeout(() => {
     context.redirect(`#/${page}`);
-  }, 2000);
+  }, 1000);
 }
 let categories = ['Vegetables and legumes/beans', 'Fruits', 'Grain Food', 'Milk, cheese, eggs and alternatives', 'Lean meats and poultry', 'Fish'];

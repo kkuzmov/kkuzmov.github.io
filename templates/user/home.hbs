@@ -1,16 +1,20 @@
 {{> header}}
-    <h1 class="text-center" id="base-text">First cooking project</h1>
+    <div class="home-page">
+    <h1 class="text-center" id="base-text">Welcome to CooKuz!</h1>
+    <h3 class="h3-home-page">A project driven by two of my passions - coding and cooking</h3>
     {{#if isLoggedIn}}
-    <p class="lead">"Your body is not a temple, it's an amusement park. Enjoy the ride."
-          </p>
-          <p class="ABName">- Anthony Bourdain</p>
-
+    <div class="articles-home-page">
+      <h4 class="single-article-home-page">Article one</h4>
+      <h4 class="single-article-home-page">Article two</h4>
+      <h4 class="single-article-home-page">Article three</h4>
+    </div>
+    {{!-- <p class="lead">"Your body is not a temple, it's an amusement park.<br> Enjoy the ride."</p>
+    <p class="ABName">- Anthony Bourdain</p> --}}
     {{else}}
         <main role="main" class="inner cover mt-5">
-          {{!-- <h1 class="cover-heading">Cooking by Kuzmov</h1> --}}
-          <p class="lead">"Your body is not a temple, it's an amusement park. Enjoy the ride."
-          </p>
+          <p class="lead">"Your body is not a temple, it's an amusement park. Enjoy the ride."</p>
           <p class="ABName">- Anthony Bourdain</p>
         </main>
     {{/if}}
+    </div>
 {{> footer}}

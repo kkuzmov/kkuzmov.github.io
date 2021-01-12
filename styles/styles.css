@@ -62,7 +62,7 @@ body {
 }
 #icon {
 background-color: transparent;
-margin: auto auto auto 14px;
+margin: auto 14px;
 padding: 4px;
 border-radius: 35px;
 box-shadow: 3px 3px 3px  rgba(219, 219, 219, 0.329);
@@ -70,13 +70,13 @@ box-shadow: 3px 3px 3px  rgba(219, 219, 219, 0.329);
 
 .masthead-brand {
   font-weight: 800;
-  font-size: 35px;
+  font-size: 40px;
   margin: 0px 7px;
-  color: #4b5320;
+  color: whitesmoke;
   text-shadow: 8px 3px 3px  rgba(219, 219, 219, 0.096);
 }
 .masthead-brand:hover{
-  color:white;
+  color:#4b5320;;
   /* font-size: 38px; */
 }
 
@@ -134,6 +134,7 @@ box-shadow: 3px 3px 3px  rgba(219, 219, 219, 0.329);
   color: rgba(255, 255, 255, .5);
   font-size: 11px;
 }
+
 
 /* h1 {
   color: #fff;
@@ -345,9 +346,10 @@ form textarea {
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 #base-text {
-  font-size: 50px;
-  font-weight: bold;
+  font-size: 65px;
+  font-weight: 800;
   text-shadow: 3px 3px #4b5320;
+  margin: 10px auto;
 }
 .recipe-short-list{
   margin: 20px auto 20px auto;
@@ -568,8 +570,12 @@ how to remove the virtical space around the range input in IE*/
 }
 .lead{
   font-family: 'Parisienne', cursive;
-  font-size: 2em;
+  font-size: 1.5em;
   margin: 15px auto;
+  text-align: center;
+}
+.ABName {
+  text-align: center;
 }
 .allCategories{
   text-align: center;
@@ -578,4 +584,30 @@ how to remove the virtical space around the range input in IE*/
   display: inline-block;
   position: relative;
   left: 150px;
+}
+.articles-home-page{
+  display: inline-block;
+  width: 100%;
+  margin: 80px auto;
+  padding: 30px;
+  text-align: center;
+}
+.single-article-home-page{
+  border: 1px solid #4b5320de;
+  background-color: rgba(112, 128, 144, 0.199);
+  border-radius: 5px;
+  padding: 10px;
+  margin: 20px 10px;
+  width: 25%;
+  display: inline-block;
+}
+.single-article-home-page:hover{
+  border: 1px solid whitesmoke;
+  cursor: pointer;
+}
+.h3-home-page{
+  text-align: center;
+  margin: 5px auto;
+}
+.home-page{
 }
