@@ -13,6 +13,3 @@ export function close(id) {
 export function update(id, data) {
     return firebase.firestore().collection('func').doc(id).update(data)
 }
-
-// ГОТОВО ЗА EXAM!!!
-// МОЖЕ ДА ПРОМЕНИШ "FUNC" С ИМЕТО НА ФУНКИОНАЛНОСТА НА САЙТА

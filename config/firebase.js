@@ -12,5 +12,3 @@ firebase.initializeApp(firebaseConfig);
 
 
 
-
-// ГОТОВО ЗА EXAM!!!
