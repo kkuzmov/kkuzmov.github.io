@@ -58,7 +58,6 @@ export function postCreate(context) {
 }
 export function getDetails(context) {
   setHeader(context)
-  console.log(context.params)
 
   const {
     id
@@ -82,7 +81,6 @@ export function getDetails(context) {
 }
 export function getEdit(context) {
   setHeader(context)
-  console.log(context.params)
   const {
     id
   } = context.params;
@@ -99,6 +97,7 @@ export function getEdit(context) {
     })
 }
 export function postEdit(context) {
+  console.log(context.params.category)
   const {
     meal,
     ingredients,
@@ -134,6 +133,8 @@ export function postEdit(context) {
         timeout(this, `#/details/${id}`);
       })
       .catch(err => console.log(err))
+  }else{
+    console.log('ERROR in validation')
   }
 
 

@@ -1,15 +1,12 @@
 import { getCreate, postCreate, getDetails, getEdit, postEdit, getArchive, getLike, getRecipes, getVeggiesRecipes, getGrainRecipes, getFishRecipes, getFruitsRecipes,getMeatsRecipes, getMilkRecipes } from './controller/func.js';
 import { getHome } from './controller/home.js';
 import { getLogin, getLogout, getRegister, postLogin, postRegister } from './controller/user.js';
-// ВНИМАВАЙ ЗА ПЪРВИЯ ПАРАМЕТЪР НА SAMMY() //
 
-// ПРОВЕРИ ДАЛИ ЩЕ СТАНЕ ВЪВ ВЪТРЕШНИЯ ДИВ!!
 
 
 const app = Sammy('#rooter', function() {
     this.use('Handlebars', 'hbs') // !!!!!ЗАДЪЛЖИТЕЛНО!!!!!!!
 
-    // ПРОВЕРИ КОИ CALLBACK ФУНКЦИИ СА НУЖНИ!!!
 
     this.get('#/home', getHome);
     this.get('#/login', getLogin);
