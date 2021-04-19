@@ -58,6 +58,7 @@ export function postCreate(context) {
 }
 export function getDetails(context) {
   setHeader(context)
+  console.log(context.params)
 
   const {
     id
@@ -81,7 +82,7 @@ export function getDetails(context) {
 }
 export function getEdit(context) {
   setHeader(context)
-
+  console.log(context.params)
   const {
     id
   } = context.params;
