@@ -31,7 +31,7 @@ export function postCreate(context) {
     ingrToPrv: x
   });
   let creator = sessionStorage.getItem('user');
-  let stars = `★`.repeat(Number(cookScale));
+  let stars = `&#9733;`.repeat(Number(cookScale));
   let whiteStars = `★`.repeat(Number(10 - cookScale));
 
   if (validateInput(meal, ingrArr, prepMethod, description, foodImageURL, category)) {
@@ -132,6 +132,7 @@ export function postEdit(context) {
         notify('Recipe edited successfully!', 'successBox')
         timeout(this, `#/details/${id}`);
       })
+      .catch(err => console.log(err))
   }
 
 
