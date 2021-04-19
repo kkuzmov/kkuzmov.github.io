@@ -134,7 +134,7 @@ export function postEdit(context) {
       })
       .catch(err => console.log(err))
   }else{
-    console.log('ERROR in validation')
+    console.log('ERROR in categories...')
   }
 
 
@@ -265,7 +265,7 @@ export function getFishRecipes(context) {
 // ГОТОВО ЗА EXAM!!!
 
 function validateInput(meal, ingredients, prepMethod, description, foodImageURL, category) {
-  if (meal.length >= 4 && ingredients.length >= 2 && prepMethod.length >= 10 && description.length >= 10 && (foodImageURL.startsWith('http://') || foodImageURL.startsWith('https://') && categories.includes(category))) {
+  if (meal.length >= 4 && ingredients.length >= 2 && prepMethod.length >= 10 && description.length >= 10 && (foodImageURL.startsWith('http://') || foodImageURL.startsWith('https://'))) {
     return true;
   } else {
     return false;
