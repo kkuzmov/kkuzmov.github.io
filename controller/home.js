@@ -19,4 +19,3 @@ export function getHome(context) {
                 context.loadPartials(commonPartials).partial('../templates/user/home.hbs');
         })
 }
-// ГОТОВО ЗА EXAM!!!

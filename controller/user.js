@@ -15,14 +15,13 @@ export function getRegister(context) {
 export function postRegister(context) {
     const {firstName, lastName, username,  password, repeatPassword } = context.params;
     if (password !== repeatPassword) {
-        // throw new Error('PASSWORDS DO NOT MATCH!');
-        // ВЕРОЯТНО NOTIFICATION!
+        // NOTIFICATION!
     }
     const names = `${firstName} ${lastName}`;
     registerUser(username, password)
         .then(res => {
             notify('User registration successful.', 'successBox');
-            saveUserInfo(names); // ФУНКЦИЯ ИМПОРТНАТА ОТ AUTH.JS
+            saveUserInfo(names); 
             firebase.auth().currentUser.updateProfile({
                 displayName: names
             })
@@ -36,7 +35,7 @@ export function postRegister(context) {
 }
 export function postLogin(context) {
     const {username,password} = context.params;
-    login(username, password) // ФУНКЦИЯ ОT MODELS/USER.JS
+    login(username, password)
         .then(res=>{
             let currUser = res.user.displayName;
             saveUserInfo(currUser);
@@ -58,5 +57,3 @@ export function getLogout() {
             timeout(this, 'home');
         })
 }
-
-// ГОТОВО ЗА EXAM!!!

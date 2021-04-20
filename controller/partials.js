@@ -3,4 +3,3 @@ export default {
     'footer': './templates/common/footer.hbs'
 }
 
-// ГОТОВО ЗА EXAM!!!
