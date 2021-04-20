@@ -1,20 +1,20 @@
   {{> header}}
-<form class="text-center p-5 form-layout" action="#/edit/{{currRecipe.id}}" method="POST" id="edit-receipt-form">
-            <p class="h4 mb-4">Edit Recipe</p>
+<form class="form-edit-recipe" action="#/edit/{{currRecipe.id}}" method="POST" id="edit-receipt-form">
+            <p class="form-edit-recipe-heading">Edit Recipe</p>
         
-            <input type="text" id="defaultRecepieEditMeal" name="meal" class="form-control mb-4" placeholder="Meal"
+            <input type="text" id="defaultRecepieEditMeal" name="meal" class="form-edit-recipe-input" placeholder="Meal"
                 value="{{currRecipe.meal}}">
         
-            <input type="text" id="defaultRecepieEditIngredients" name="ingredients" class="form-control mb-4"
+            <input type="text" id="defaultRecepieEditIngredients" name="ingredients" class="form-edit-recipe-input"
                 placeholder="Ingredients" value="{{currRecipe.ingredients}}">
         
-            <textarea type="text" id="defaultRecepieEditMethodOfPreparation" name="prepMethod" class="form-control mb-4"
+            <textarea type="text" id="defaultRecepieEditMethodOfPreparation" name="prepMethod" class="form-edit-recipe-input"
                 placeholder="Method of preparation">{{currRecipe.prepMethod}}</textarea>
         
-            <textarea type="text" id="defaultRecepieEditDescription" name="description" class="form-control mb-4"
+            <textarea type="text" id="defaultRecepieEditDescription" name="description" class="form-edit-recipe-input"
                 placeholder="Description">{{currRecipe.description}}</textarea>
         
-            <input type="text" id="defaultRecepieEditFoodImageURL" name="foodImageURL" class="form-control mb-4"
+            <input type="text" id="defaultRecepieEditFoodImageURL" name="foodImageURL" class="form-edit-recipe-input"
                 placeholder="Food Image URL..." value="{{currRecipe.foodImageURL}}">
 
             <label for="cookScale"> Recookable scale</label><br>
@@ -30,7 +30,7 @@
                 <option>Milk, cheese, eggs and alternatives</option>
                 <option>Lean meats and poultry, fish and alternatives</option>
             </select>
-            <button class="btn btn-danger w-25 m-auto my-4 btn-block" type="submit">Edit it</button>
+            <button class="form-edit-button" type="submit">Edit it</button>
         
         </form>
   {{> footer}}

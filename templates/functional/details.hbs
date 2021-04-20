@@ -1,6 +1,6 @@
   {{> header}}
-<div class="row form-layout p-5">
-            <div class="col-md-12">
+<div class="details">
+            <div class="details-container">
                 <div class="recepieInfo">
                     <div class="detailsFoodImage">
                         <img id="imageOne" src="{{ currRecipe.foodImageURL }}"alt="">
@@ -11,7 +11,7 @@
                     </div>
                     </div>
                     <div class="infoPack">
-                        <h3 class="my-3">{{ currRecipe.meal }}</h3>
+                        <h3 class="details-recipe-name">{{ currRecipe.meal }}</h3>
                          <div class="divCookScale"> 
                         <p class="goldStars">{{currRecipe.stars}}</p>
                         <p class="whiteStars">{{currRecipe.whiteStars}}</p>
@@ -30,7 +30,7 @@
                 </div>
 
                 <div class="detailsIngredients">
-                    <h3 class="my-3 ingredient">Ingredients</h3>
+                    <h3 class="ingredients-heading">Ingredients</h3>
                     <ul class="list-ingredients">
                         {{#each currRecipe.ingrArr }}
                         <li>{{ ingr }}</li>

@@ -1,19 +1,19 @@
 {{> header}}
-<form class="text-center p-5 form-layout" action="#/create" method="POST" id="share-receipt-form">
-            <p class="h4 mb-4">Share Recipe</p>
+<form class="form-create-layout" action="#/create" method="POST" id="share-receipt-form">
+            <p class="form-create-heading">Share Recipe</p>
 
-            <input type="text" id="defaultRecepieShareMeal" required name="meal" class="form-control mb-4" placeholder="Meal">
+            <input type="text" id="defaultRecepieShareMeal" required name="meal" class="form-create-input" placeholder="Meal">
 
-            <input type="text" id="defaultRecepieShareIngredients" required name="ingredients" class="form-control mb-4"
+            <input type="text" id="defaultRecepieShareIngredients" required name="ingredients" class="form-create-input"
                 placeholder="Ingredients">
 
             <textarea type="text" id="defaultRecepieShareMethodOfPreparation" required name="prepMethod"
-                class="form-control mb-4" placeholder="Method of preparation" rows="5" cols="40"></textarea>
+                class="form-create-input" placeholder="Method of preparation" rows="5" cols="40"></textarea>
 
-            <textarea type="text" id="defaultRecepieShareDescription" name="description" required class="form-control mb-4"
+            <textarea type="text" id="defaultRecepieShareDescription" name="description" required class="form-create-input"
                 placeholder="Notes"></textarea>
 
-            <input type="text" id="defaultRecepieShareFoodImageURL" name="foodImageURL" required class="form-control mb-4"
+            <input type="text" id="defaultRecepieShareFoodImageURL" name="foodImageURL" required class="form-create-input"
                 placeholder="Food Image URL...">
             
             <label for="cookScale"> Recookable scale</label><br>
@@ -32,6 +32,6 @@
                 <option>Fish</option>
             </select>
 
-            <button class="btn btn-danger w-25 m-auto my-4 btn-block" type="submit">Share it</button>
+            <button class="form-create-button" type="submit">Share it</button>
         </form>
 {{> footer}}
