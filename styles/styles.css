@@ -1,5 +1,6 @@
 html, body {
-  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/garlic-head-on-a-wooden-rustic-table-picjumbo-com.jpg');
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/ezgif-4-a641513573bc.png');
+  background-size: contain;
   background-attachment: fixed;
   background-size:unset;
   font-family: 'Neucha', cursive;
@@ -15,10 +16,11 @@ body {
 }
 .header-inner{
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   padding: 0px 10px;
   font-size: 30px;
-  /* background-color: #4b532056; */
+  min-width: 800px;
+  /* background-color: #4b532034; */
   justify-content: space-between;
 }
 .header-inner a{
@@ -36,7 +38,8 @@ body {
 }
 .header-logo img{
   margin-right: 10px;
-  max-width: 200px;
+  opacity: 0.85;
+  max-width: 250px;
 }
 .cover-container {
   max-width: 45em;
