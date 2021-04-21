@@ -1,16 +1,11 @@
   {{> header}}
           <form class="form-login" action="#/login" method="POST">
-
-            <p class="form-login-heading">Sign in</p>
-
-            <input type="text" id="defaultRegisterFormUsername" name="username" class="form-login-input"
-                placeholder="Username">
-
-            <input type="password" id="defaultRegisterFormPassword" name="password" class="form-login-input"
-                placeholder="Password">
+            <p class="form-login-heading">Login</p>
+            <label for="username">Username</label>
+            <input type="text" id="defaultRegisterFormUsername" name="username" class="form-login-input" >
+            <label for="username">Password</label>
+            <input type="password" id="defaultRegisterFormPassword" name="password" class="form-login-input" placeholder="Password">
             <hr>
-
-            <button class="form-login-button" type="submit">Sign in</button>
-
+            <button class="form-button" type="submit">Sign in</button>
         </form>
   {{> footer}}
