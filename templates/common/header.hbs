@@ -1,20 +1,45 @@
 <header class="header-main">
             <div class="header-inner">
-               <a href=".#/home"><img id="icon" src='../images/glass_fork.png' alt="knife and fork"></a>
-               <a href=".#/home"> <h3 class="masthead-brand">CooKuz</h3></a>
-                <nav class="header-navigation">
+                <section class="header-logo">
+                    <a href=".#/home"><img id="icon" src='../images/glass_fork.png' alt="knife and fork"></a>
+                    <a href=".#/home"> <h3 class="masthead-brand">CooKuz</h3></a>
+               </section>
+               <nav class="style-4">
+		            <ul class="menu-4">
+		              <li class="current"><a href="#/home" data-hover="Home">Home</a></li>
+                      {{#if isLoggedIn}}
+                      <li><a class="nav-link recipes-in-nav" href="#/recipes" data-hover="Recipes">Recipes &#x21E9;</a></li>
+                      <div class="recipesDropdown">
+                        <ul class="dropdown">
+                            <li><a href="#/vegetables-recipes">Veggie</a></li>
+                            <li><a href="#/grain-recipes">Grain</a></li>
+                            <li><a href="#/fruits-recipes">Fruits</a></li>
+                            <li><a href="#/milk-recipes">Milk</a></li>
+                            <li><a href="#/meats-recipes">Meats</a></li>
+                            <li><a href="#/fish-recipes">Fish</a></li>
+                        </ul>
+                      </div>
+		              <li><a href="#/create" data-hover="Share recipe">Share recipe</a></li>
+		              <li><a href="#/logout" data-hover="Logout">Logout</a></li>
+                      {{else}}
+		              <li><a href="#/login" data-hover="Login">Login</a></li>
+		              <li><a href="#/register" data-hover="Register">Register</a></li>
+                      {{/if}}
+		            </ul>
+	            </nav>
+                {{!-- <nav class="header-navigation">
                     <a class="nav-link" href="#/home">Home</a>
                     {{#if isLoggedIn}}
                     <div class="recipesDropdown">
-                    <a class="nav-link" href="#/recipes">Recipes &#x21E9;</a>
-                    <ul class="dropdown">
-                    <li><a href="#/vegetables-recipes">Veggie</a></li>
-                    <li><a href="#/grain-recipes">Grain</a></li>
-                    <li><a href="#/fruits-recipes">Fruits</a></li>
-                    <li><a href="#/milk-recipes">Milk</a></li>
-                    <li><a href="#/meats-recipes">Meats</a></li>
-                    <li><a href="#/fish-recipes">Fish</a></li>
-                    </ul>
+                        <a class="nav-link" href="#/recipes">Recipes &#x21E9;</a>
+                        <ul class="dropdown">
+                        <li><a href="#/vegetables-recipes">Veggie</a></li>
+                        <li><a href="#/grain-recipes">Grain</a></li>
+                        <li><a href="#/fruits-recipes">Fruits</a></li>
+                        <li><a href="#/milk-recipes">Milk</a></li>
+                        <li><a href="#/meats-recipes">Meats</a></li>
+                        <li><a href="#/fish-recipes">Fish</a></li>
+                        </ul>
                     </div>
                     <a class="nav-link" href="#/create">Share recipe</a>
                     <a class="nav-link" href="#/logout">Logout</a>
@@ -22,7 +47,7 @@
                     <a class="nav-link" href="#/login">Login</a>
                     <a class="nav-link" href="#/register">Register</a>
                     {{/if}}
-                </nav>
+                </nav> --}}
             </div>
 </header>
 
