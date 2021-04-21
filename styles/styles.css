@@ -36,7 +36,7 @@ body {
 }
 .header-logo img{
   margin-right: 10px;
-  max-width: 150px;
+  max-width: 200px;
 }
 .cover-container {
   max-width: 45em;
@@ -200,8 +200,8 @@ body {
 }
 .navigation-in-header li {
   list-style: outside none none;
-  margin: 0 1.5em;
-  font-size: 20px;
+  margin: 0 1em;
+  font-size: 22px;
   overflow: hidden;
 }
 .navigation-in-header a {
