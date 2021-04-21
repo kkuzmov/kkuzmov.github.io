@@ -40,6 +40,7 @@ body {
 }
 .cover-container {
   max-width: 45em;
+
 }
 .categories{
   background-color: #4b532088;
@@ -243,3 +244,15 @@ body {
 /* .recipes-in-nav:hover .dropdown{
   display: block;
 } */
+#successBox, #loadingBox, #errorBox{
+  display: none;
+}
+.footer-inner{
+  text-align: center;
+}
+.footer-inner a:visited{
+  color: white;
+}
+.home-page{
+  min-height: 70vh;
+}

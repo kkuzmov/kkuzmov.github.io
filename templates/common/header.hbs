@@ -6,10 +6,10 @@
                </section>
                <nav class="style-4">
 		            <ul class="navigation-in-header">
-		              <li class="current"><a href="#/home" data-hover="Home">Home</a></li>
+		              <li class=""><a href="#/home" data-hover="Home">Home</a></li>
                       {{#if isLoggedIn}}
-                      <li><a class="nav-link recipes-in-nav" href="#/recipes" data-hover="Recipes">Recipes &#x21E9;</a></li>
-                      <div class="recipesDropdown">
+                      <li><a class="nav-link recipes-in-nav" href="#/recipes" data-hover="Recipes">Recipes</a></li>
+                      {{!-- <div class="recipesDropdown">
                         <ul class="dropdown">
                             <li><a href="#/vegetables-recipes">Veggie</a></li>
                             <li><a href="#/grain-recipes">Grain</a></li>
@@ -18,7 +18,7 @@
                             <li><a href="#/meats-recipes">Meats</a></li>
                             <li><a href="#/fish-recipes">Fish</a></li>
                         </ul>
-                      </div>
+                      </div> --}}
 		              <li><a href="#/create" data-hover="Share recipe">Share recipe</a></li>
 		              <li><a href="#/logout" data-hover="Logout">Logout</a></li>
                       {{else}}
@@ -27,32 +27,11 @@
                       {{/if}}
 		            </ul>
 	            </nav>
-                {{!-- <nav class="header-navigation">
-                    <a class="nav-link" href="#/home">Home</a>
-                    {{#if isLoggedIn}}
-                    <div class="recipesDropdown">
-                        <a class="nav-link" href="#/recipes">Recipes &#x21E9;</a>
-                        <ul class="dropdown">
-                        <li><a href="#/vegetables-recipes">Veggie</a></li>
-                        <li><a href="#/grain-recipes">Grain</a></li>
-                        <li><a href="#/fruits-recipes">Fruits</a></li>
-                        <li><a href="#/milk-recipes">Milk</a></li>
-                        <li><a href="#/meats-recipes">Meats</a></li>
-                        <li><a href="#/fish-recipes">Fish</a></li>
-                        </ul>
-                    </div>
-                    <a class="nav-link" href="#/create">Share recipe</a>
-                    <a class="nav-link" href="#/logout">Logout</a>
-                    {{else}}
-                    <a class="nav-link" href="#/login">Login</a>
-                    <a class="nav-link" href="#/register">Register</a>
-                    {{/if}}
-                </nav> --}}
             </div>
 </header>
 
 <div id="notifications">
-            <div id="successBox" class="alert alert-success">{Success Message...}</div>
-            <div id="loadingBox" class="alert alert-info">Loading...</div>
-            <div id="errorBox" class="alert alert-danger">{Error Message...}</div>
+    <div id="successBox" class="alert alert-success">{Success Message...}</div>
+    <div id="loadingBox" class="alert alert-info">Loading...</div>
+    <div id="errorBox" class="alert alert-danger">{Error Message...}</div>
 </div>
