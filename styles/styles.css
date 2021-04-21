@@ -183,7 +183,7 @@ body {
   border: 1px solid whitesmoke;
   cursor: pointer;
 }
-.h3-home-page{
+.home-page-main-heading{
   text-align: center;
   margin: 5px auto;
 }
@@ -255,4 +255,8 @@ body {
 }
 .home-page{
   min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
