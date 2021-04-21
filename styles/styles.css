@@ -1,4 +1,21 @@
+html, body {
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/garlic-head-on-a-wooden-rustic-table-picjumbo-com.jpg');
+  background-attachment: fixed;
+  background-size:unset;
+  font-family: 'Neucha', cursive;
+  font-size: 1.1em;
+  /* background-color:#ffe6005b;
+  background-blend-mode:darken; */
+}
+body {
+  display: flex;
+  justify-content: center;
+  color: white;
+}
 
+.cover-container {
+  max-width: 45em;
+}
 .categories{
   background-color: #4b532088;
   text-align: center;
