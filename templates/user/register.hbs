@@ -1,28 +1,16 @@
   {{> header}}
-  <form class="form-register" action="#/register" method="POST">
-
-            <p class="form-register-heading">Sign up</p>
-
-            <div class="form-register-names-main">
-                <div class="form-register-names">
-                    <input type="text" id="defaultRegisterFormFirstName" class="form-register-input" name="firstName"
-                        placeholder="First name">
-                </div>
-                <div class="col">
-
-                    <input type="text" id="defaultRegisterFormLastName" class="form-register-input" name="lastName"
-                        placeholder="Last name">
-                </div>
-            </div>
-
-            <input type="text" id="defaultRegisterFormUsername" class="form-register-input mb-4" name="username"
-                placeholder="Username">
-            <input type="password" id="defaultRegisterFormPassword" class="form-register-input" name="password"
-                placeholder="Password">
-            <hr>
-            <input type="password" id="defaultRegisterRepeatPassword" class="form-register-input" name="repeatPassword"
-                placeholder="Repeat Password">
-            <button class="form-button" type="submit">Sign up</button>
-
-        </form>
+<form class="form-login-register" action="#/register" method="POST">
+    <p class="form-login-register-heading">Register</p>
+    <label for="firstName">First name</label>
+    <input type="text" id="defaultRegisterFormFirstName" class="form-login-register-input" name="firstName">
+    <label for="lastName">Last name</label>
+    <input type="text" id="defaultRegisterFormLastName" class="form-login-register-input" name="lastName">
+    <label for="username">Username</label>
+    <input type="text" id="defaultRegisterFormUsername" class="form-login-register-input mb-4" name="username">
+    <label for="password">Password</label>
+    <input type="password" id="defaultRegisterFormPassword" class="form-login-register-input" name="password">
+    <label for="repeatPassword">Repeat Password</label>
+    <input type="password" id="defaultRegisterRepeatPassword" class="form-login-register-input" name="repeatPassword">
+    <button class="form-button" type="submit">Sign up</button>
+</form>
   {{> footer}}

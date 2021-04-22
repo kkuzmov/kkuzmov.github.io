@@ -42,6 +42,7 @@ body {
 }
 .main-container {
   max-width: 45em;
+  min-width: 45em;
   /* background-color: rgba(82, 82, 82, 0.459); */
 }
 .categories{
@@ -265,40 +266,34 @@ body {
 .footer-inner a:visited{
   color: white;
 }
-.home-page{
+.home-page, .form-login-register{
   min-height: 73vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.form-login{
-  display: flex;
-  min-height: 73vh;
-
-  flex-direction: column;
-  align-items: center;
+.form-login-register-heading{
+  font-size: 50px;
 }
-.form-login-heading{
-  font-size: 40px;
-}
-.form-login input, .form-login button{
+.form-login-register input{
   max-width: 200px;
   min-height: 30px;
-  /* margin-bottom: 20px; */
+  margin-bottom: 10px;
   background-color: #e67e22;
   font-size: 18px;
 }
-.form-login label{
+.form-login-register label{
   font-size: 25px;
 }
-.form-login input:focus{
+.form-login-register input:focus{
   background-color: white;
   color: #e67e22;
 }
 .form-button{
   background-color: #e67e22;
   color: white;
+  margin-top: 20px;
   border: none;
   border-radius: 5px;
   font-size: 20px;
