@@ -277,7 +277,7 @@ body {
   font-size: 50px;
 }
 .form-login-register input{
-  max-width: 200px;
+  width: 300px;
   min-height: 30px;
   margin-bottom: 10px;
   background-color: #e67e22;
