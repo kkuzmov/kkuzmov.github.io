@@ -11,8 +11,7 @@ html, body {
 body {
   display: flex;
   justify-content: center;
-  color: white;
-  background-color: red;
+  color: #A8D198;
 }
 .header-inner{
   display: flex;
@@ -27,7 +26,7 @@ body {
   text-decoration: none;
 }
 .header-inner a:visited{
-  color: white;
+  color: #A8D198;
 }
 .nav-link{
   margin-right: 10px;
@@ -41,8 +40,9 @@ body {
   opacity: 0.85;
   max-width: 250px;
 }
-.cover-container {
-  max-width: 45em;
+.main-container {
+  /* max-width: 45em; */
+  /* background-color: rgba(82, 82, 82, 0.459); */
 
 }
 .categories{
