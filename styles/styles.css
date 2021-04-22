@@ -41,9 +41,8 @@ body {
   max-width: 250px;
 }
 .main-container {
-  /* max-width: 45em; */
+  max-width: 45em;
   /* background-color: rgba(82, 82, 82, 0.459); */
-
 }
 .categories{
   background-color: #4b532088;
@@ -148,14 +147,15 @@ body {
   list-style-type: none; 
   padding: 1px;
 }
-.lead{
+.lead, .ABName{
   font-family: 'Parisienne', cursive;
   font-size: 1.5em;
-  margin: 15px auto;
   text-align: center;
+  text-shadow: 2px -1px 1px #e67d224d;
+  /* margin-top: 40px; */
 }
-.ABName {
-  text-align: center;
+.login-page-quote{
+  margin-top: 40px;
 }
 .allCategories{
   text-align: center;
@@ -186,9 +186,18 @@ body {
   border: 1px solid whitesmoke;
   cursor: pointer;
 }
-.home-page-main-heading{
+.homepage-main-heading{
+  font-size: 95px;
+  margin: 50px auto 20px auto;
+  padding: 0px;
+  text-shadow: 2px -1px 1px #e67d224d;
+
+}
+.home-page-smaller-heading{
+  font-size: 35px;
   text-align: center;
-  margin: 5px auto;
+  text-shadow: 2px -1px 1px #e67d224d;
+  line-height: 1.5;
 }
 .navigation-in-header {
   text-align: center;
@@ -276,7 +285,7 @@ body {
 .form-login input, .form-login button{
   max-width: 200px;
   min-height: 30px;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
   background-color: #e67e22;
   font-size: 18px;
 }

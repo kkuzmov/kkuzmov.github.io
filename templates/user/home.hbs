@@ -1,20 +1,13 @@
 {{> header}}
     <div class="home-page">
       <h1 class="homepage-main-heading">Welcome to CooKuz!</h1>
-      <h3 class="home-page-smaller-heading">A project driven by two of my passions - coding and cooking</h3>
+      <h3 class="home-page-smaller-heading">A project driven by two of my passions - coding and cooking.<br> Discover new recipes made by other culinary masterminds and add your own dishes.<br>Let your imagination create new masterpieces and your mind will blossom with energy and satisfaction.</h3>
       {{#if isLoggedIn}}
       <div class="articles-home-page">
         <h4 class="single-article-home-page">Article one</h4>
         <h4 class="single-article-home-page">Article two</h4>
         <h4 class="single-article-home-page">Article three</h4>
       </div>
-      {{!-- <p class="lead">"Your body is not a temple, it's an amusement park.<br> Enjoy the ride."</p>
-      <p class="ABName">- Anthony Bourdain</p> --}}
-      {{else}}
-          <main class="homepage-quote">
-            <p class="lead">"Your body is not a temple, it's an amusement park. Enjoy the ride."</p>
-            <p class="ABName">- Anthony Bourdain</p>
-          </main>
       {{/if}}
     </div>
 {{> footer}}
