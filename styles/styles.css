@@ -303,3 +303,9 @@ body {
   background-color: white;
   color: #e67e22;
 }
+.random-recipe{
+  display: flex;
+  min-width: 600px;
+  justify-content: space-around;
+  align-items: baseline;
+}
