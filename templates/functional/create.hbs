@@ -1,37 +1,34 @@
 {{> header}}
 <form class="form-create-layout" action="#/create" method="POST" id="share-receipt-form">
-            <p class="form-create-heading">Share Recipe</p>
-
-            <input type="text" id="defaultRecepieShareMeal" required name="meal" class="form-create-input" placeholder="Meal">
-
-            <input type="text" id="defaultRecepieShareIngredients" required name="ingredients" class="form-create-input"
-                placeholder="Ingredients">
-
-            <textarea type="text" id="defaultRecepieShareMethodOfPreparation" required name="prepMethod"
-                class="form-create-input" placeholder="Method of preparation" rows="5" cols="40"></textarea>
-
-            <textarea type="text" id="defaultRecepieShareDescription" name="description" required class="form-create-input"
-                placeholder="Notes"></textarea>
-
-            <input type="text" id="defaultRecepieShareFoodImageURL" name="foodImageURL" required class="form-create-input"
-                placeholder="Food Image URL...">
-            
-            <label for="cookScale"> Recookable scale</label><br>
-                <span class="scale">Never again</span>
-                <input id="cookScale" name="cookScale" type="range" min="0" max="10" step="1">
-            <span class="scale">Favorite</span>
-            <br>
-            <br>
-            <select name="category">
-                <option selected>Select category...</option>
-                <option>Vegetables and legumes/beans</option>
-                <option>Fruits</option>
-                <option>Grain Food</option>
-                <option>Milk, cheese, eggs and alternatives</option>
-                <option>Lean meats and poultry</option>
-                <option>Fish</option>
-            </select>
-
-            <button class="form-button" type="submit">Share it</button>
+        <p class="form-create-heading">Share Recipe</p>
+        <label for="meal">Meal</label>
+        <input type="text" id="defaultRecepieShareMeal" required name="meal" class="form-create-input">
+        <label for="ingredients">Ingredients</label>
+        <input type="text" id="defaultRecepieShareIngredients" required name="ingredients" class="form-create-input" placeholder="Separate by , ">
+        <label for="prepMethod">Method of preparation</label>
+        <textarea type="text" id="defaultRecepieShareMethodOfPreparation" required name="prepMethod" class="form-create-input" rows="5" cols="40"></textarea>
+        <label for="description">Notes and reminders</label>
+        <textarea type="text" id="defaultRecepieShareDescription" name="description" required class="form-create-input"></textarea>
+        <label for="foodImageURL">Food Image URL...</label>
+        <input type="text" id="defaultRecepieShareFoodImageURL" name="foodImageURL" required class="form-create-input">
+        
+        <label for="cookScale"> Recookable scale</label><br>
+            <span class="scale">Never again</span>
+            <input id="cookScale" name="cookScale" type="range" min="0" max="10" step="1">
+        <span class="scale">Favorite</span>
+        <br>
+        <br>
+        <label for="category">Meal categories</label><br>
+        
+        <select name="category">
+            <option selected>Select category...</option>
+            <option>Vegetables and legumes/beans</option>
+            <option>Fruits</option>
+            <option>Grain Food</option>
+            <option>Milk, cheese, eggs and alternatives</option>
+            <option>Lean meats and poultry</option>
+            <option>Fish</option>
+        </select>
+         <button class="form-button" type="submit">Share it</button>
         </form>
 {{> footer}}

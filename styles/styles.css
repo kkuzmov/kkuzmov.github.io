@@ -266,35 +266,36 @@ body {
   text-align: center;
 }
 .footer-inner a:visited{
-  color: white;
+  color: #FEF9EF;
 }
-.home-page, .form-login-register{
+.home-page, .form-login-register, .form-create-layout{
   min-height: 73vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.form-login-register-heading{
+.form-login-register-heading, .form-create-heading{
   font-size: 50px;
 }
-.form-login-register input{
+.form-login-register input, .form-create-layout input, .form-create-layout textarea, .form-create-layout select{
   width: 300px;
   min-height: 30px;
   margin-bottom: 10px;
   background-color: #e67e22;
   font-size: 18px;
 }
-.form-login-register label{
+.form-login-register label, .form-create-layout label{
   font-size: 25px;
 }
-.form-login-register input:focus{
-  background-color: white;
+.form-login-register input:focus, .form-create-layout input:focus, .form-create-layout textarea:focus, .form-create-layout select:focus{
+  background-color: #FEF9EF;
   color: #e67e22;
 }
 .form-button{
-  background-color: #e67e22;
-  color: white;
+  background-color: #FEF9EF;
+  color: #e67e22;
+  
   margin-top: 20px;
   border: none;
   border-radius: 5px;
@@ -302,8 +303,13 @@ body {
   padding: 8px;
 }
 .form-button:active{
-  background-color: white;
-  color: #e67e22;
+  background-color: #e67e22;
+  color: #FEF9EF;
+}
+.form-create-layout textarea, .form-create-layout select, .form-create-layout input{
+  /* font-family: 'Neucha', serif; */
+  font-size: 1.1em;
+
 }
 .random-recipe{
   display: flex;
