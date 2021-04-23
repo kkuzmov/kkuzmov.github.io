@@ -283,6 +283,8 @@ body {
   min-height: 30px;
   margin-bottom: 10px;
   background-color: #e67e22;
+  color: #FEF9EF;
+  border-radius: 3px;
   font-size: 18px;
 }
 .form-login-register label, .form-create-layout label{
@@ -295,7 +297,6 @@ body {
 .form-button{
   background-color: #FEF9EF;
   color: #e67e22;
-  
   margin-top: 20px;
   border: none;
   border-radius: 5px;
@@ -309,7 +310,20 @@ body {
 .form-create-layout textarea, .form-create-layout select, .form-create-layout input{
   /* font-family: 'Neucha', serif; */
   font-size: 1.1em;
-
+}
+.range{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 20px;
+  width: 500px;
+  padding: 5px;
+  border-radius: 3px;
+  background-color: #e67e22;
+  color: #FEF9EF;
+}
+.cookScale{
+  max-width: 200px;
 }
 .random-recipe{
   display: flex;
