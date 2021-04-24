@@ -1,16 +1,16 @@
 {{>header}}
 {{#if recipes}}
 <div class="all-recipes-from-category">
-{{#each recipes}}
-<div class="singleRecipe">
-<span><a href="#/details/{{this.id}}">{{this.meal}}</a></span>
-<img class="small-img-in-all-dishes"  src={{this.foodImageURL}} alt={{this.meal}}/>
-</div>
-{{/each}}
+    {{#each recipes}}
+    <div class="singleRecipe">
+        <span><a href="#/details/{{this.id}}">{{this.meal}}</a></span>
+        <img class="small-img-in-all-dishes"  src={{this.foodImageURL}} alt={{this.meal}}/>
+    </div>
+    {{/each}}
 </div>
 {{else}}
 <div class="singleRecipe">
-<h1>No recipes yet!</h1>
+    <h1>No recipes yet!</h1>
 </div>
 {{/if}}
 {{>footer}}
