@@ -48,18 +48,31 @@ body {
   /* background-color: rgba(82, 82, 82, 0.459); */
 }
 .meal-category {
-  display: inline-block;
   border-radius: 5px;
   background-color: #4b5320de;
-  width: 300px;
-  text-align: center;
-  margin: 6px;
+  min-width: 350px;
+  display: flex;
+  padding: 5px;
+  font-size: 22px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
 }
 
 .meal-category img{
-  width: 300px;
+  min-width: 300px;
+  border-radius: 5px;
+  opacity: 0.5;
   height: 180px;
-  padding: 10px 10px;
+  padding-bottom: 10px;
+}
+.meal-category img:hover{
+  opacity: 1;
+}
+.meal-category a{
+  margin: 0px;
+  padding: 0px;
 }
 .singleRecipe{
   background-color: #4b532088;
@@ -153,7 +166,9 @@ body {
   margin-top: 40px;
 }
 .allCategories{
-  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 .btn-change-pic{
   display: inline-block;
