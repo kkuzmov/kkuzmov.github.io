@@ -338,3 +338,16 @@ a:visited{
   justify-content: space-around;
   align-items: baseline;
 }
+.details{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: red;
+}
+.detailsFoodImage{
+  width: 500px;
+}
+.detailsFoodImage img{
+  max-width: 100%;
+}
