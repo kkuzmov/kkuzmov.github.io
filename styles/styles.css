@@ -334,9 +334,10 @@ a:visited{
 }
 .random-recipe{
   display: flex;
+  flex-direction: column;
   min-width: 600px;
   justify-content: space-around;
-  align-items: baseline;
+  align-items: center;
 }
 .details-container{
   display: flex;
