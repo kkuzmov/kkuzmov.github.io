@@ -18,6 +18,15 @@ export function getHome(context) {
                 context.loadPartials(commonPartials).partial('../templates/user/home.hbs');
         })
 }
-export function searchMeal(context){
-        console.log(context.params.searchQuery)
+export function searchMeal(event, context){
+        let searchQuery = event.target.firstElementChild.value;
+        getAll()
+        .then(res =>{
+                res.docs.forEach(element => {
+                console.log(element.data())
+                });
+                let searchResult = res.docs.filter(x => x.data().meal.toLowerCase().includes(searchQuery.toLowerCase())).map(x => x = x.data());
+                console.log(searchResult)
+                context.result = searchResult;
+        })
 }

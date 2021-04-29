@@ -12,6 +12,13 @@
           <h2 class="random-recipe-heading">I would like to see a random recipe</h2>
           <button class="form-button">Give it a try</button>
       </section>
+      {{#if context.result}}
+      {{#each result}}
+        <p>{{meal}}</p>
+      {{/each}}
+      {{else}}
+      <p>no context result</p>
+      {{/if}}
       {{!-- <div class="articles-home-page">
         <h4 class="single-article-home-page">Article one</h4>
         <h4 class="single-article-home-page">Article two</h4>
@@ -19,10 +26,6 @@
       </div> --}}
       {{else}}
       <h1 class="homepage-main-heading">Welcome to CooKuz!</h1>
-      {{!-- <section class="random-recipe">
-      <h2 class="random-recipe-heading">Would you like to try a random recipe??</h2>
-      <button class="random-recipe-button">Give me one</button>
-      </section> --}}
       <h3 class="homepage-smaller-heading"><br> Discover new recipes made by other culinary masterminds and share your own creations.<br>Let your hedonistic imagination bring life to nutritous marvels that will vitalize your body and make your mind blossom with satisfaction and delight.</h3>
       {{/if}}
     </div>
