@@ -1,7 +1,7 @@
 export function create(data) {
     return firebase.firestore().collection('func').add(data)
 }
-export function getAll() {
+export function getAll(query) {
     return firebase.firestore().collection('func').get()
 }
 export function get(id) {

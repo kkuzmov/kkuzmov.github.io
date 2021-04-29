@@ -12,6 +12,9 @@
           <h2 class="random-recipe-heading">I would like to see a random recipe</h2>
           <button class="form-button">Give it a try</button>
       </section>
+      {{#each context.result}}
+      <p>{{meal}}</p>
+      {{/each}}
       {{!-- <div class="articles-home-page">
         <h4 class="single-article-home-page">Article one</h4>
         <h4 class="single-article-home-page">Article two</h4>

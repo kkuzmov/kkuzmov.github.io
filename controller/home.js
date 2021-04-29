@@ -19,13 +19,13 @@ export function getHome(context) {
         })
 }
 export function searchMeal(event, context){
-        setHeader(context)
-
         let searchQuery = event.target.firstElementChild.value;
-        getAll()
-                .then(res =>{
-                        let searchResult = res.docs.filter(x => x.data().meal.toLowerCase().includes(searchQuery.toLowerCase())).map(x => x = x.data());
-                        context.result = searchResult;
-                        context.loadPartials(commonPartials).partial('../templates/functional/searchRes.hbs');
-                })
+        console.log(searchQuery)
+
+        // getAll(searchQuery)
+        //         .then(res =>{
+        //                 let searchResult = res.docs.filter(x => x.data().meal.toLowerCase().includes(searchQuery.toLowerCase())).map(x => x = x.data());
+        //                 context.result = searchResult;
+        //                 // context.loadPartials(commonPartials).partial('../templates/functional/searchRes.hbs');
+        //         })
 }
