@@ -35,6 +35,7 @@ export function postRegister(context) {
 }
 export function postLogin(context) {
     const {username,password} = context.params;
+    
     login(username, password)
         .then(res=>{
             let currUser = res.user.displayName;

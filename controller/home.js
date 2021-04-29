@@ -4,7 +4,6 @@ import commonPartials from './partials.js';
 
 export function getHome(context) {
         setHeader(context)
-        console.log(context.user)
         getAll()
         .then(res =>{
                 let recipes = res.docs.map(recipe => recipe = {...recipe.data(), id: recipe.id});
@@ -18,4 +17,7 @@ export function getHome(context) {
 
                 context.loadPartials(commonPartials).partial('../templates/user/home.hbs');
         })
+}
+export function searchMeal(context){
+        console.log(context.params.searchQuery)
 }

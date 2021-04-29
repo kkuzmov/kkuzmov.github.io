@@ -4,8 +4,8 @@
       <h1 class="homepage-main-heading">Welcome, {{user}}</h1>
       <section class="random-recipe">
           <h2 class="random-recipe-heading">What would you like to eat today?</h2>
-          <form action="POST" class="form-homepage-search">
-              <input type="text" placeholder="Enter ingredients" class="search-input">
+          <form method="POST" action="#/search" class="form-homepage-search">
+              <input type="text" placeholder="Enter ingredients" class="search-input" name="searchQuery">
               <input type="submit" class="form-button" value="Search">
           </form>
           <h2 class="random-recipe-heading">or...</h2>

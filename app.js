@@ -1,5 +1,5 @@
 import { getCreate, postCreate, getDetails, getEdit, postEdit, getArchive, getLike, getRecipes, getVeggiesRecipes, getGrainRecipes, getFishRecipes, getFruitsRecipes,getMeatsRecipes, getMilkRecipes } from './controller/func.js';
-import { getHome } from './controller/home.js';
+import { getHome, searchMeal } from './controller/home.js';
 import { getLogin, getLogout, getRegister, postLogin, postRegister } from './controller/user.js';
 
 
@@ -25,10 +25,11 @@ const app = Sammy('#rooter', function() {
     this.get('#/milk-recipes', getMilkRecipes);
     this.get('#/meats-recipes', getMeatsRecipes);
     this.get('#/fish-recipes', getFishRecipes);
-
-
-
-
+    
+    
+    
+    
+    this.post('#/search', searchMeal);
     this.post('#/create', postCreate);
     this.post('#/register', postRegister);
     this.post('#/login', postLogin);
