@@ -1,8 +1,7 @@
 html, body {
   background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/ezgif-4-a641513573bc.png');
-  background-size: contain;
+  background-size:auto;
   background-attachment: fixed;
-  background-size:unset;
   font-family: 'Neucha', cursive;
   font-size: 1.1em;
   /* background-color:#ffe6005b;
@@ -10,6 +9,7 @@ html, body {
 }
 body {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   color: #A8D198;
 }
@@ -21,12 +21,9 @@ a:visited{
 }
 .header-inner{
   display: flex;
-  align-items: flex-end;
+  flex-direction: column;
   padding: 0px 10px;
   font-size: 30px;
-  min-width: 800px;
-  /* background-color: #4b532034; */
-  justify-content: space-between;
 }
 .header-inner a{
   font-size: 23px;
@@ -48,11 +45,7 @@ a:visited{
   opacity: 0.85;
   max-width: 250px;
 }
-.main-container {
-  max-width: 45em;
-  min-width: 45em;
-  /* background-color: rgba(82, 82, 82, 0.459); */
-}
+/*  */
 .meal-category {
   border-radius: 5px;
   background-color: #2f4400b9;
@@ -197,20 +190,19 @@ a:visited{
 }
 .homepage-main-heading{
   font-size: 95px;
-  margin: 50px auto 20px auto;
-  padding: 0px;
+  margin: 0 auto;
+  text-align: center;
   text-shadow: 2px -1px 1px #e67d224d;
 }
 .homepage-smaller-heading{
-  font-size: 35px;
+  font-size: 25px;
   text-align: center;
   text-shadow: 2px -1px 1px #e67d224d;
   line-height: 2;
 }
 .navigation-in-header {
-  text-align: center;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   text-transform: uppercase;
   font-weight: 500;
 }
