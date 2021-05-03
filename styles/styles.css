@@ -1,7 +1,6 @@
 html, body {
   background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/ezgif-4-a641513573bc.png');
   background-size:auto;
-  background-attachment: fixed;
   /* background-repeat: round; */
   font-family: 'Neucha', cursive;
   font-size: 1.1em;
@@ -11,6 +10,10 @@ body {
   flex-direction: column;
   justify-content: center;
   color: #A8D198;
+}
+.main-container {
+  max-width: 45em;
+  /* background-color: rgba(82, 82, 82, 0.459); */
 }
 a{
   text-decoration: none;
