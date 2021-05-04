@@ -1,7 +1,7 @@
 html, body {
   background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images//ezgif-4-a641513573bc-mobile.png');
   background-size: contain;
-  background-repeat: repeat;
+  background-repeat: repeat-y;
   font-family: 'Neucha', cursive;
   font-size: 1.1em;
 }
@@ -39,7 +39,6 @@ a:visited{
 .header-inner img{
   opacity: 0.85;
   max-width: 370px;
-  min-width: 250px;
 }
 .style-4{
   padding: 0;
@@ -187,7 +186,7 @@ a:visited{
   cursor: pointer;
 }
 .homepage-main-heading{
-  font-size: 95px;
+  font-size: 75px;
   margin: 0 auto;
   text-align: center;
   text-shadow: 2px -1px 1px #e67d224d;
