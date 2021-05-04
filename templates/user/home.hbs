@@ -2,7 +2,7 @@
     <div class="home-page">
       {{#if isLoggedIn}}
       <h1 class="homepage-main-heading">Welcome, {{user}}</h1>
-      <section class="random-recipe">
+      {{!-- <section class="random-recipe">
           <h2 class="random-recipe-heading">What would you like to eat today?</h2>
           <form method="POST" action="#/search" class="form-homepage-search">
               <input type="text" placeholder="Enter ingredients" class="search-input" name="searchQuery">
@@ -11,7 +11,7 @@
           <h2 class="random-recipe-heading">or...</h2>
           <h2 class="random-recipe-heading">I would like to see a random recipe</h2>
           <button class="form-button">Give it a try</button>
-      </section>
+      </section> --}}
       {{#each context.result}}
       <p>{{meal}}</p>
       {{/each}}
