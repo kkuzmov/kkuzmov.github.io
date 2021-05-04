@@ -1,7 +1,7 @@
 html, body {
-  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images//ezgif-4-a641513573bc-mobile.png');
-  background-size: contain;
-  background-repeat: repeat-y;
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images//ezgif-4-a641513573bc.png');
+  background-size: cover;
+  max-width: 480px;
   font-family: 'Neucha', cursive;
   font-size: 1.1em;
 }
