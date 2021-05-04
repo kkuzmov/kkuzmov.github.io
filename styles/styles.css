@@ -1,8 +1,8 @@
 html, body {
-  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images//ezgif-4-a641513573bc.png');
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
   background-size: cover;
-  max-width: 480px;
   font-family: 'Neucha', cursive;
+  max-width: 100%;
   font-size: 1.1em;
 }
 body {
@@ -10,6 +10,9 @@ body {
   flex-direction: column;
   justify-content: center;
   color: #A8D198;
+}
+.main-container {
+  max-width: 100%;
 }
 a{
   text-decoration: none;
@@ -38,7 +41,7 @@ a:visited{
 } */
 .header-inner img{
   opacity: 0.85;
-  max-width: 370px;
+  max-width: 300px;
 }
 .style-4{
   padding: 0;
@@ -165,7 +168,7 @@ a:visited{
   width: auto;
   margin: 0px auto;
 }
-.articles-home-page{
+/* .articles-home-page{
   display: inline-block;
   width: 100%;
   margin: 60px auto;
@@ -184,7 +187,7 @@ a:visited{
 .single-article-home-page:hover{
   border: 1px solid whitesmoke;
   cursor: pointer;
-}
+} */
 .homepage-main-heading{
   font-size: 75px;
   margin: 0 auto;
