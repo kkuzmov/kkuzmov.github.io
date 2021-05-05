@@ -1,8 +1,7 @@
 html, body {
-  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/ezgif-4-a641513573bc-mobile.png');
   background-size: cover;
   font-family: 'Neucha', cursive;
-  max-width: 100%;
   font-size: 1.1em;
 }
 body {
@@ -41,7 +40,7 @@ a:visited{
 } */
 .header-inner img{
   opacity: 0.85;
-  max-width: 300px;
+  max-width: 350px;
 }
 .style-4{
   padding: 0;
@@ -114,38 +113,6 @@ a:visited{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-}
-
-.recipesDropdown ul{
-  display: none;
-  margin-top: 0.3em;
-  border-radius: 5px;
-  text-decoration: none;
-  /* горното под въпрос */
-}
-.dropdown a:hover{
-  text-decoration: none;
-  /* горното под въпрос */
-}
-.recipesDropdown ul li:hover{
-  background-color: rgba(245, 245, 245, 0.158);
-  cursor: pointer;
-  text-decoration: none;
-}
-.recipesDropdown ul li{
-  width: 100%;
-  text-align: center;
-  border: 0.1px solid whitesmoke;
-  border-radius: 5px;
-  margin: 4px 0px;
-  padding: 1px;
-  background-color: rgba(29, 83, 22, 0.219);
-}
-.recipesDropdown:hover .dropdown{
-  display: block;
-  border-radius: 10px;
-  list-style-type: none; 
-  padding: 1px;
 }
 .lead, .ABName{
   font-family: 'Parisienne', cursive;
@@ -238,7 +205,6 @@ a:visited{
   bottom: 100%;
   display: block;
   height: 3px;
-  width: 100%;
   content: "";
   background-color: #e67e22;
 }
