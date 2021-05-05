@@ -17,7 +17,7 @@ a{
   text-decoration: none;
 }
 a:visited{
-  color: inherit;
+  color: #A8D198;
 }
 .header-inner{
   display: flex;
@@ -230,8 +230,9 @@ a:visited{
 .footer-inner{
   text-align: center;
 }
-.footer-inner a:visited{
-  color: #FEF9EF;
+.footer-inner a, .footer-inner a:visited{
+  color: #A8D198;
+  text-decoration: underline;
 }
 .home-page, .form-login-register, .form-create-layout{
   min-height: 73vh;
@@ -264,7 +265,7 @@ a:visited{
   background-color: #FEF9EF;
   cursor: pointer;
   color: #e67e22;
-  margin-top: 20px;
+  margin: 30px 0px;
   border: none;
   border-radius: 5px;
   font-size: 20px;
