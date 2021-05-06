@@ -438,6 +438,8 @@ option{
   }
   .singleRecipe img{
     border-radius: 5px;
+    max-width: 250px;
+    height: auto;
     margin-bottom: 10px;
     opacity: 0.5;
   }
