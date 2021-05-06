@@ -297,6 +297,9 @@ a:visited{
 .cookScale{
   max-width: 100px;
 }
+option{
+  font-size: 17px;
+}
 .random-recipe{
   display: flex;
   min-height: 33vh;
