@@ -91,18 +91,25 @@ a:visited{
   font-size: 25px;
   font-weight: 300;
 }
-.singleRecipe:hover {
+.singleRecipe:active {
   border-radius: 5px;
   margin: 1em 1em;
   font-size: 25px;
   font-weight: 300;
 }
+.singleRecipe a{
+  color: #A8D198;
+}
 .singleRecipe span{
-  margin-top: 10px;
+  margin: 10px 10px 5px 10px;
   min-height: 40px;
 }
 .singleRecipe img{
   border-radius: 5px;
+  max-width: 100%;
+  max-height: 100%;
+  background-size: cover;
+  height: auto;
   margin-bottom: 10px;
   opacity: 0.5;
 }
@@ -351,7 +358,7 @@ option{
     text-decoration: none;
   }
   a:visited{
-    color: inherit;
+    color: #A8D198;
   }
   .header-inner{
     display: flex;
