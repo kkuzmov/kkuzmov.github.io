@@ -1,7 +1,7 @@
 html, body {
   background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/ezgif-4-a641513573bc-mobile.png');
   background-size: cover;
-  font-family: 'Neucha', cursive;
+  font-family: 'Neucha', serif;
   font-size: 1.1em;
 }
 body {
@@ -246,16 +246,16 @@ a:visited{
   font-size: 50px;
 }
 .form-login-register input, .form-create-layout input, .form-create-layout textarea, .form-create-layout select, .search-input{
-  width: 300px;
+  width: 270px;
   min-height: 30px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   background-color: #e67e22;
   color: #FEF9EF;
   border-radius: 3px;
   font-size: 18px;
 }
 .form-login-register label, .form-create-layout label{
-  font-size: 25px;
+  font-size: 30px;
 }
 .form-login-register input:focus, .form-create-layout input:focus, .form-create-layout textarea:focus, .form-create-layout select:focus{
   background-color: #FEF9EF;
@@ -284,14 +284,18 @@ a:visited{
   justify-content: space-between;
   align-items: center;
   font-size: 20px;
-  width: 500px;
+  width: 270px;
   padding: 5px;
   border-radius: 3px;
   background-color: #e67e22;
   color: #FEF9EF;
 }
+.range input{
+  cursor: pointer;
+  width: 150px;
+}
 .cookScale{
-  max-width: 200px;
+  max-width: 100px;
 }
 .random-recipe{
   display: flex;
@@ -319,6 +323,9 @@ a:visited{
   display: flex;
   flex-direction: column;
 }
+
+/* DESKTOP */
+
 @media screen and (min-width: 600px){
   html, body {
     background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/ezgif-4-a641513573bc.png');
