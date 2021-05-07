@@ -1,17 +1,27 @@
   {{> header}}
             <div class="details-container">
                 <div class="recepieInfo">
-                    <div class="detailsFoodImage">
-                            <img id="imageOne" src="{{ currRecipe.foodImageURL }}"alt="">
-                            <br>
-                        <div class="btn-change-pic">
-                            <button id="change-pic-left" onclick="clickLeft()"><</button>
-                            <button id="change-pic-right" onclick="clickRight()">></button>
+                    <h3 class="details-recipe-name">{{ currRecipe.meal }}</h3>
+                    <div class="image-and-ingredients">
+                        <div class="detailsFoodImage">
+                                <img id="imageOne" src="{{ currRecipe.foodImageURL }}"alt="">
+                                <br>
+                            {{!-- <div class="btn-change-pic">
+                                <button id="change-pic-left" onclick="clickLeft()"><</button>
+                                <button id="change-pic-right" onclick="clickRight()">></button>
+                            </div> --}}
+                        </div>
+                        <div class="detailsIngredients">
+                        <h3 class="ingredients-heading">Ingredients</h3>
+                        <ul class="list-ingredients">
+                            {{#each currRecipe.ingrArr }}
+                            <li>{{ ingr }}</li>
+                            {{/each}}
+                        </ul>
                         </div>
                     </div>
                     <div class="infoPack">
-                        <h3 class="details-recipe-name">{{ currRecipe.meal }}</h3>
-                         <div class="divCookScale"> 
+                        <div class="divCookScale"> 
                         <p class="goldStars">{{currRecipe.stars}}</p>
                         <p class="whiteStars">{{currRecipe.whiteStars}}</p>
                         </div>
@@ -27,16 +37,6 @@
                         {{/if}}
                     </div>
                 </div>
-
-                <div class="detailsIngredients">
-                    <h3 class="ingredients-heading">Ingredients</h3>
-                    <ul class="list-ingredients">
-                        {{#each currRecipe.ingrArr }}
-                        <li>{{ ingr }}</li>
-                        {{/each}}
-                    </ul>
-                </div>
-                
             </div>
   {{> footer}}
 <script>
