@@ -643,6 +643,7 @@ option{
   .details-container{
     background-color: #4b53205b;
     color: #A8D198;
+    border-radius: 10px;
     font-size: 30px;
     display: flex;
   }
@@ -651,14 +652,19 @@ option{
     width: 500px;
   }
   .detailsFoodImage img{
+    border-radius: 10px;
     max-width: 100%;
   }
   .image-and-ingredients{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    border-radius: 10px;
     background-color: #e67e22;
     width: 100%;
+  }
+  .list-ingredients{
+    list-style:circle;
   }
   .infoPack{
     display: flex;
