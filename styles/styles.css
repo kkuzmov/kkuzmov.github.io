@@ -642,10 +642,13 @@ option{
   }
   .details-container{
     background-color: #4b53205b;
-    color: #A8D198;
+    color: #d0e0ca;
     border-radius: 10px;
     font-size: 30px;
     display: flex;
+  }
+  .details-container a, .details-container a:visited{
+    color: #d0e0ca;
   }
   .detailsFoodImage{
     margin: 20px 0px;
@@ -655,12 +658,17 @@ option{
     border-radius: 10px;
     max-width: 100%;
   }
+  .detailsIngredients{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   .image-and-ingredients{
     display: flex;
     justify-content: space-around;
     align-items: center;
     border-radius: 10px;
-    background-color: #e67e22;
+    background-color: #e67d22a8;
     width: 100%;
   }
   .list-ingredients{
@@ -672,13 +680,24 @@ option{
     justify-content: center;
     align-items: center;
   }
+  .divCookScale{
+    display: flex;
+    margin: 0px;
+  }
+  .goldStars{
+    color: #e5b826;
+  }
+  .whiteStars{
+    color: rgba(255, 255, 255, 0.438);
+  }
   .prep-method{
-    background-color: #e67e22;
+    background-color: #e67d22a8;
     padding: 20px;
     text-align: center;
   }
   .details-recipe-name{
     font-size: 45px;
+    margin-bottom: 0px;
   }
   .recepieInfo{
     display: flex;

@@ -2,6 +2,10 @@
             <div class="details-container">
                 <div class="recepieInfo">
                     <h3 class="details-recipe-name">{{ currRecipe.meal }}</h3>
+                    <div class="divCookScale"> 
+                            <p class="goldStars">{{currRecipe.stars}}</p>
+                            <p class="whiteStars">{{currRecipe.whiteStars}}</p>
+                    </div>
                     <div class="image-and-ingredients">
                         <div class="detailsFoodImage">
                                 <img id="imageOne" src="{{ currRecipe.foodImageURL }}"alt="">
@@ -12,21 +16,19 @@
                             </div> --}}
                         </div>
                         <div class="detailsIngredients">
-                        <h3 class="ingredients-heading">Ingredients</h3>
-                        <ul class="list-ingredients">
-                            {{#each currRecipe.ingrArr }}
-                            <li>{{ ingr }}</li>
-                            {{/each}}
-                        </ul>
+                            <h3 class="ingredients-heading">Ingredients</h3>
+                            <ul class="list-ingredients">
+                                {{#each currRecipe.ingrArr }}
+                                <li>{{ ingr }}</li>
+                                {{/each}}
+                            </ul>
                         </div>
                     </div>
                     <div class="infoPack">
-                        <div class="divCookScale"> 
-                        <p class="goldStars">{{currRecipe.stars}}</p>
-                        <p class="whiteStars">{{currRecipe.whiteStars}}</p>
+                        <div>
+                            <p class="prep-method">{{ currRecipe.prepMethod }}</p>
+                            <p class="description">*** {{ currRecipe.description }}***</p>
                         </div>
-                        <p class="prep-method">{{ currRecipe.prepMethod }}</p>
-                        <p class="description">*** {{ currRecipe.description }}***</p>
                     </div>
                     <div class="actions">
                         {{#if isCreator}}
@@ -38,6 +40,7 @@
                     </div>
                 </div>
             </div>
+            
   {{> footer}}
 <script>
     function clickLeft(e){
