@@ -642,7 +642,7 @@ option{
   }
   .details-container{
     background-color: #4b53205b;
-    color: white;
+    color: #A8D198;
     font-size: 30px;
     display: flex;
   }
@@ -657,7 +657,7 @@ option{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: red;
+    background-color: #e67e22;
     width: 100%;
   }
   .infoPack{
@@ -667,7 +667,7 @@ option{
     align-items: center;
   }
   .prep-method{
-    background-color: red;
+    background-color: #e67e22;
     padding: 20px;
     text-align: center;
   }
