@@ -32,10 +32,10 @@
                     </div>
                     <div class="actions">
                         {{#if isCreator}}
-                        <a class="btn btn-danger" href="#/archive/{{currRecipe.id}}">Archive</a>
-                        <a class="btn btn-info" href="#/edit/{{currRecipe.id}}">Edit</a>
+                        <a class="button-archive" href="#/archive/{{currRecipe.id}}">Archive</a>
+                        <a class="button-edit" href="#/edit/{{currRecipe.id}}">Edit</a>
                         {{else}}
-                        <a class="btn btn-success" href="#/like/{{currRecipe.id}}"> {{currRecipe.likesCounter}} likes</a>
+                        <a class="button-like" href="#/like/{{currRecipe.id}}"> {{currRecipe.likesCounter}} likes</a>
                         {{/if}}
                     </div>
                 </div>

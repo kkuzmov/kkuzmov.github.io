@@ -643,6 +643,7 @@ option{
   .details-container{
     background-color: #4b53205b;
     color: #d0e0ca;
+    min-height: 80%;
     border-radius: 10px;
     font-size: 30px;
     display: flex;
@@ -656,7 +657,8 @@ option{
   }
   .detailsFoodImage img{
     border-radius: 10px;
-    max-width: 100%;
+    max-width: 400px;
+    max-height: 100%;
   }
   .detailsIngredients{
     display: flex;
@@ -686,11 +688,13 @@ option{
   }
   .goldStars{
     color: #e5b826;
+    font-size: 40px;
   }
   .whiteStars{
     color: rgba(255, 255, 255, 0.438);
+    font-size: 40px;
   }
-  .prep-method{
+  .prep-method, .description{
     background-color: #e67d22a8;
     padding: 20px;
     text-align: center;
@@ -703,5 +707,14 @@ option{
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+  .actions{
+    margin-top: 20px;
+  }
+  .button-archive, .button-edit, .button-like{
+    border: 1px solid #d0e0ca;
+    background-color: #e67d22a8;
+    border-radius: 5px;
+    padding: 5px;
   }
 }
