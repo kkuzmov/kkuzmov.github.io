@@ -166,7 +166,7 @@ export function getLike(context) {
       });
 
       notify('You liked that recipe.', 'successBox');
-      timeout(this, 'home');
+      timeout(this, `#/details/${id}`);
     })
 
 }
