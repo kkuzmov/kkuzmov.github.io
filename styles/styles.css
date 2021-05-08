@@ -332,16 +332,10 @@ option{
 .details-container a, .details-container a:visited{
   color: #d0e0ca;
 }
-.detailsFoodImage{
-  margin: 20px 0px;
-  width: 400px;
-  height: auto;
-
-}
 .detailsFoodImage img{
   border-radius: 10px;
   object-fit: cover;
-
+  margin-bottom: 20px;
   max-height: 100%;
   max-width: 100%;
 }
@@ -352,7 +346,8 @@ option{
 }
 .image-and-ingredients{
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
   border-radius: 10px;
   background-color: #e67d22a8;
