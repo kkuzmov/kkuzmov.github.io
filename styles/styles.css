@@ -233,6 +233,13 @@ a:visited{
 } */
 #successBox, #loadingBox, #errorBox{
   display: none;
+  font-size: 40px;
+  background-color: #e67e22;
+  padding: 10px;
+  max-width: 500px;
+  margin: 0 auto;
+  border-radius: 5px;
+  text-align: center;
 }
 .footer-inner{
   text-align: center;
