@@ -234,7 +234,7 @@ a:visited{
 #successBox, #loadingBox, #errorBox{
   display: none;
   font-size: 40px;
-  background-color: #e67e22;
+  background-color: #e67d22bd;
   padding: 10px;
   max-width: 500px;
   margin: 0 auto;
