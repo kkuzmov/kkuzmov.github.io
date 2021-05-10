@@ -760,6 +760,7 @@ option{
   }
   .image-and-ingredients{
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
     align-items: center;
     border-radius: 10px;
@@ -789,7 +790,7 @@ option{
   }
   .prep-method, .description{
     background-color: #e67d22a8;
-    padding: 20px;
+    border-radius: 10px;
     text-align: center;
   }
   .details-recipe-name{
@@ -799,6 +800,7 @@ option{
   .recepieInfo{
     display: flex;
     flex-direction: column;
+    width: 100%;
     align-items: center;
   }
   .actions{
