@@ -2,16 +2,17 @@
     <div class="home-page">
       {{#if isLoggedIn}}
       <h1 class="homepage-main-heading">Welcome, {{user}}</h1>
-      {{!-- <section class="random-recipe">
+      <section class="random-recipe">
           <h2 class="random-recipe-heading">What would you like to eat today?</h2>
-          <form method="POST" action="#/search" class="form-homepage-search">
+          {{!-- <form method="POST" action="#/search" class="form-homepage-search">
               <input type="text" placeholder="Enter ingredients" class="search-input" name="searchQuery">
               <input type="submit" class="form-button" value="Search">
-          </form>
+          </form> --}}
           <h2 class="random-recipe-heading">or...</h2>
           <h2 class="random-recipe-heading">I would like to see a random recipe</h2>
-          <button class="form-button">Give it a try</button>
-      </section> --}}
+          <button class="form-button" onclick=showRandomRecipe()>Give it a try</button>
+      </section>
+      <section id="random-recipe" style="display: none;">Randomizeeee</section>
       {{#each context.result}}
       <p>{{meal}}</p>
       {{/each}}
@@ -26,3 +27,8 @@
       {{/if}}
     </div>
 {{> footer}}
+<script>
+  function showRandomRecipe(){
+    document.getElementById('random-recipe').setAttribute('style', 'display: block')
+  }
+</script>
