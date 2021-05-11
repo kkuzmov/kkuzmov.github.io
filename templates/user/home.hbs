@@ -2,6 +2,8 @@
     <div class="home-page">
       {{#if isLoggedIn}}
       <h1 class="homepage-main-heading">Welcome, {{user}}</h1>
+
+      {{!-- RANDOM RECIPE --}}
       <section class="random-recipe">
           <h2 class="random-recipe-heading">What would you like to eat today?</h2>
           {{!-- <form method="POST" action="#/search" class="form-homepage-search">
@@ -12,15 +14,8 @@
           <h2 class="random-recipe-heading">I would like to see a random recipe</h2>
           <button class="form-button" onclick=showRandomRecipe()>Give it a try</button>
       </section>
-      <section id="random-recipe" style="display: none;">Randomizeeee</section>
-      {{#each context.result}}
-      <p>{{meal}}</p>
-      {{/each}}
-      {{!-- <div class="articles-home-page">
-        <h4 class="single-article-home-page">Article one</h4>
-        <h4 class="single-article-home-page">Article two</h4>
-        <h4 class="single-article-home-page">Article three</h4>
-      </div> --}}
+      <section id="random-recipe" style="display: none;">{{randomRecipe}}</section>
+      {{!-- RANDOM RECIPE END --}}
       {{else}}
       <h1 class="homepage-main-heading">Welcome to CooKuz!</h1>
       <h3 class="homepage-smaller-heading"><br> Discover new recipes made by other culinary masterminds and share your own creations.<br>Let your hedonistic imagination bring life to nutritous marvels that will vitalize your body and make your mind blossom with satisfaction and delight.</h3>
@@ -29,6 +24,12 @@
 {{> footer}}
 <script>
   function showRandomRecipe(){
-    document.getElementById('random-recipe').setAttribute('style', 'display: block')
+    firebase.firestore().collection('func').get()
+    .then(res => {
+      let recipes = res.docs.map(recipe => recipe = {...recipe.data(), id: recipe.id});
+      context.randomRecipe = recipes[0];
+      document.getElementById('random-recipe').setAttribute('style', 'display: block')
+
+    })
   }
 </script>
