@@ -152,18 +152,14 @@ export function getArchive(context) {
 }
 export function getLike(context) {
 
-  const {
-    id
-  } = context.params;
+  const { id } = context.params;
 
   get(id)
     .then(res => {
       let currRecipe = res.data();
 
       const likesCounter = currRecipe.likesCounter + 1;
-      update(id, {
-        likesCounter
-      });
+      update(id, { likesCounter });
 
       notify('You liked that recipe.', 'successBox');
       timeout(this, `#/details/${id}`);

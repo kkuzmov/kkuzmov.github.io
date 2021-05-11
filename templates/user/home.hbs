@@ -28,8 +28,12 @@
         .then(res => {
           let recipes = res.docs.map(recipe => recipe = {...recipe.data(), id: recipe.id});
           let randomRecipe = recipes[0]
-          let randomRecipeDiv = document.getElementById('random-recipe')
-          randomRecipeDiv.innerHTML = `<p>${randomRecipe.meal}</p>`
+          let randomRecipeDiv = document.getElementById('random-recipe');
+          let randomRecipeHTML = document.createElement('div');
+          let rrMeal = document.createElement('p');
+          rrMeal.textContent = randomRecipe.meal;
+          randomRecipeHTML.appendChild(rrMeal)
+          randomRecipeDiv.appendChild(randomRecipeHTML)
           randomRecipeDiv.setAttribute('style', 'display: block')
         })
   }
