@@ -24,6 +24,7 @@
 {{> footer}}
 <script>
   function showRandomRecipe(){
+    document.getElementById('random-recipe').innerHTML = '';
     firebase.firestore().collection('func').get()
         .then(res => {
           let recipes = res.docs.map(recipe => recipe = {...recipe.data(), id: recipe.id});
