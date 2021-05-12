@@ -14,7 +14,7 @@
           <h2 class="random-recipe-heading">I would like to see a random recipe</h2>
           <button class="form-button" onclick=showRandomRecipe()>Give it a try</button>
       </section>
-      <section id="random-recipe" style="display: none;">{{randomRecipe}}</section>
+      <section id="random-recipe" style="display: none;">{{> randomRecipe}}</section>
       {{!-- RANDOM RECIPE END --}}
       {{else}}
       <h1 class="homepage-main-heading">Welcome to CooKuz!</h1>
@@ -24,18 +24,6 @@
 {{> footer}}
 <script>
   function showRandomRecipe(){
-    document.getElementById('random-recipe').innerHTML = '';
-    firebase.firestore().collection('func').get()
-        .then(res => {
-          let recipes = res.docs.map(recipe => recipe = {...recipe.data(), id: recipe.id});
-          let randomRecipe = recipes[0]
-          let randomRecipeDiv = document.getElementById('random-recipe');
-          let randomRecipeHTML = document.createElement('div');
-          let rrMeal = document.createElement('p');
-          rrMeal.textContent = randomRecipe.meal;
-          randomRecipeHTML.appendChild(rrMeal)
-          randomRecipeDiv.appendChild(randomRecipeHTML)
-          randomRecipeDiv.setAttribute('style', 'display: block')
-        })
+    document.getElementById('random-recipe').style.display = 'block'
   }
 </script>
