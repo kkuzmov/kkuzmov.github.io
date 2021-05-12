@@ -12,9 +12,9 @@
           </form> --}}
           <h2 class="random-recipe-heading">or...</h2>
           <h2 class="random-recipe-heading">I would like to see a random recipe</h2>
-          <button class="form-button" onclick=showRandomRecipe()>Give it a try</button>
+          <button class="form-button" onclick=loadRandomRecipe()>Give it a try</button>
       </section>
-      <section id="random-recipe" style="display: none;">{{> randomRecipe}}</section>
+      <section id="random-recipe" style="display: none;">{{> randomRecipe name="testing name"}}</section>
       {{!-- RANDOM RECIPE END --}}
       {{else}}
       <h1 class="homepage-main-heading">Welcome to CooKuz!</h1>
@@ -23,7 +23,16 @@
     </div>
 {{> footer}}
 <script>
-  function showRandomRecipe(){
-    document.getElementById('random-recipe').style.display = 'block'
+  function loadRandomRecipe(){
+    document.getElementById('random-recipe').innerHTML = '';
+    firebase.firestore().collection('func').get()
+        .then(res => {
+          let recipes = res.docs.map(recipe => recipe = {...recipe.data(), id: recipe.id});
+          let randomRecipe = recipes[0];
+          console.log(randomRecipe)
+          let randomRecipeDiv = document.getElementById('random-recipe');
+          randomRecipeDiv.innerHTML = `{{> randomRecipe name="${randomRecipe.meal}" stars="${randomRecipe.stars}" creator="${randomRecipe.creator}"}}`;
+          randomRecipeDiv.style.display = 'block'
+        })
   }
 </script>
