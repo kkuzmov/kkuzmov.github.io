@@ -721,12 +721,10 @@ option{
   }
   .random-recipe{
     display: flex;
-    min-height: 33vh;
-    /* background-color: red; */
     flex-direction: column;
     margin-bottom: 50px;
     min-width: 600px;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
   }
   .details-container{
