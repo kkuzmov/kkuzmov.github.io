@@ -27,7 +27,7 @@
           let randomRecipeDiv = document.getElementById('random-recipe-result');
           let whiteStars = randomRecipe.whiteStars || '';
           randomRecipeDiv.innerHTML = `{{> randomRecipe name="${randomRecipe.meal}" stars="${randomRecipe.stars}" whiteStars="${whiteStars}" foodImageURL="${randomRecipe.foodImageURL}"}}`;
-          randomRecipeDiv.style.display = 'block'
+          randomRecipeDiv.style.display = 'flex'
         })
   }
 </script>

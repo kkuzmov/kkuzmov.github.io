@@ -734,30 +734,27 @@ option{
     background-color: #e67d227a;
     margin-top: 30px;
     padding: 30px;
-    display: flex;
-    flex-wrap: wrap;
     width: 400px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
     border-radius: 10px;
   }
   #random-recipe-result h1{
-    display: flex;
     color: #A8D198;
     font-size: 40px;
-    margin: 20px auto 0px auto;
-    flex-wrap: wrap;
-    justify-content: center;
+    text-align: center;
   }
   #random-recipe-result div{
     display: flex;
     margin: 0px;
-    flex-wrap: wrap;
+    flex-wrap: no-wrap;
     justify-content: center;
   }
-  .recipe-image-preview{
-    margin: 10px 100px;
+  #random-recipe-result img{
     border-radius: 10px;
-    width: 200px;
-    height: 200px;
+    width: 280px;
+    height: 210px;
   }
   .details-container{
     background-color: #4b53205b;
