@@ -289,6 +289,9 @@ a:visited{
   color: #e67e22;
   margin: 30px 0px;
   border: none;
+  font-family: 'Neucha', serif;
+  text-transform: uppercase;
+  font-weight: 600;
   border-radius: 5px;
   font-size: 20px;
   padding: 8px;
@@ -730,6 +733,24 @@ option{
   .random-recipe-heading{
     font-size: 45px;
   }
+  .random-recipe-button{
+    background-color: #FEF9EF;
+    cursor: pointer;
+    color: #e67e22 !important;
+    font-family: 'Neucha', serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 30px 0px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 8px;
+    text-transform: uppercase;
+  }
+  .random-recipe-button:active{
+      background-color: #e67e22;
+      color: #FEF9EF;
+  }
   #random-recipe-result{
     background-color: #e67d227a;
     margin-top: 30px;
@@ -748,7 +769,7 @@ option{
   #random-recipe-result div{
     display: flex;
     margin: 0px;
-    flex-wrap: no-wrap;
+    flex-wrap:nowrap;
     justify-content: center;
   }
   #random-recipe-result img{
