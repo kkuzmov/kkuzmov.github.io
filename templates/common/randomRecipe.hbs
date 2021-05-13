@@ -1,6 +1,12 @@
 <h1 id="random-recipe-name" onload=loadRandomRecipe()>{{name}}</h1>
 <div class="divCookScale"> 
     <p class="goldStars-preview">{{stars}}</p>
-    <p class="whiteStars-preview">{{whiteStars}}</p>
+    <p class="whiteStars-preview">
+        {{#if whiteStars}}
+        {{whiteStars}}
+        {{else}}
+        <p> no stars</p>  
+        {{/if}}
+        </p>
 </div>
-<h3 id="random-recipe-name" onload=loadRandomRecipe()>{{creator}}</h3>
+<img src={{foodImageURL}} alt="recipe image" class="recipe-image-preview">

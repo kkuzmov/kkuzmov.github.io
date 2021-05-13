@@ -727,6 +727,13 @@ option{
     justify-content: space-around;
     align-items: center;
   }
+  #random-recipe-result{
+    background-color: red;
+  }
+  .recipe-image-preview{
+    width: 200px;
+    height: 200px;
+  }
   .details-container{
     background-color: #4b53205b;
     color: #d0e0ca;
