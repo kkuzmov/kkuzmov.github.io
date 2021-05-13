@@ -25,8 +25,7 @@
           let recipes = res.docs.map(recipe => recipe = {...recipe.data(), id: recipe.id});
           const randomRecipe = recipes[Math.floor(Math.random() * recipes.length)];
           let randomRecipeDiv = document.getElementById('random-recipe-result');
-          let whiteStars = randomRecipe.whiteStars || '';
-          randomRecipeDiv.innerHTML = `{{> randomRecipe name="${randomRecipe.meal}" stars="${randomRecipe.stars}" whiteStars="${whiteStars}" foodImageURL="${randomRecipe.foodImageURL}" href="#/details/${randomRecipe.id}"}}`;
+          randomRecipeDiv.innerHTML = `{{> randomRecipe name="${randomRecipe.meal}" foodImageURL="${randomRecipe.foodImageURL}" href="#/details/${randomRecipe.id}"}}`;
           randomRecipeDiv.style.display = 'flex'
         })
   }
