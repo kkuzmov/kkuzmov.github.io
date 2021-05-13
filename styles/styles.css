@@ -786,6 +786,14 @@ option{
     color: rgba(255, 255, 255, 0.438);
     font-size: 40px;
   }
+  .goldStars-preview{
+    color: #e5b826;
+    font-size: 30px;
+  }
+  .whiteStars-preview{
+    color: rgba(255, 255, 255, 0.438);
+    font-size: 30px;
+  }
   .prep-method, .description{
     background-color: #e67d22a8;
     border-radius: 10px;
