@@ -466,6 +466,13 @@ option{
   border-radius: 5px;
   padding: 5px;
 }
+.no-recipes{
+  text-align: center;
+  background-color: #2f4400b9;
+  padding: 30px;
+  border-radius: 5px;
+
+}
 
 /* DESKTOP */
 
