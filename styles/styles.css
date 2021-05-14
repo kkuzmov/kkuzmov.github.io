@@ -333,11 +333,12 @@ option{
 }
 .random-recipe{
   display: flex;
-  min-height: 33vh;
   /* background-color: red; */
   flex-direction: column;
+  flex-wrap: wrap;
+  text-align: center;
   margin-bottom: 50px;
-  min-width: 600px;
+  max-width: 100%;
   justify-content: space-between;
   align-items: center;
 }
