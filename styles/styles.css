@@ -256,7 +256,7 @@ a:visited{
   color: #A8D198;
   text-decoration: underline;
 }
-.home-page, .form-login-register, .form-create-layout{
+.home-page, .form-login-register, .form-create-layout, .form-edit-recipe{
   min-height: 73vh;
   display: flex;
   flex-direction: column;
@@ -267,7 +267,7 @@ a:visited{
   text-align: center;
   font-size: 50px;
 }
-.form-login-register input, .form-create-layout input, .form-create-layout textarea, .form-create-layout select, .search-input{
+.form-login-register input, .form-create-layout input, .form-create-layout textarea, .form-create-layout select, .search-input, .form-edit-recipe input, .form-edit-recipe textarea, .form-edit-recipe select{
   width: 270px;
   min-height: 30px;
   margin-bottom: 20px;
@@ -276,10 +276,10 @@ a:visited{
   border-radius: 3px;
   font-size: 18px;
 }
-.form-login-register label, .form-create-layout label{
+.form-login-register label, .form-create-layout label, .form-edit-recipe label{
   font-size: 30px;
 }
-.form-login-register input:focus, .form-create-layout input:focus, .form-create-layout textarea:focus, .form-create-layout select:focus{
+.form-login-register input:focus, .form-create-layout input:focus, .form-create-layout textarea:focus, .form-create-layout select:focus, .form-edit-recipe input:focus, .form-edit-recipe textarea:focus, .form-edit-recipe select:focus{
   background-color: #FEF9EF;
   color: #e67e22;
 }
@@ -302,7 +302,7 @@ a:visited{
   box-shadow: 5px 5px 0px 0px #4b53205b, 10px 10px 0px 0px #e67e22, 5px 5px 15px 5px rgba(255,255,255,0);
   color: #FEF9EF;
 }
-.form-create-layout textarea, .form-create-layout select, .form-create-layout input{
+.form-create-layout textarea, .form-create-layout select, .form-create-layout input, .form-edit-recipe input, .form-edit-recipe textarea, .form-edit-recipe select{
   /* font-family: 'Neucha', serif; */
   font-size: 1.1em;
 }
@@ -324,6 +324,7 @@ a:visited{
 }
 .scale{
   font-size: 20px;
+  margin: 0px 1px;
 }
 .cookScale{
   max-width: 100px;
@@ -730,8 +731,9 @@ option{
     text-align: center;
     font-size: 50px;
   }
-  .form-login-register input, .form-create-layout input, .form-create-layout textarea, .form-create-layout select, .search-input, .form-edit-recipe input, .form-edit-recipe textarea, .form-edit-recipe select{
-    width: 300px;
+  .form-login-register input, .form-create-layout input, .form-create-layout textarea, .form-create-layout select, .search-input, 
+  .form-edit-recipe input, .form-edit-recipe textarea, .form-edit-recipe select{
+    width: 400px;
     min-height: 30px;
     margin-bottom: 10px;
     background-color: #e67e22;
@@ -763,7 +765,7 @@ option{
     color: #FEF9EF;
   }
   .form-create-layout textarea, .form-create-layout select, .form-create-layout input, .form-edit-recipe input, .form-edit-recipe textarea, .form-edit-recipe select{
-    /* font-family: 'Neucha', serif; */
+    font-family: 'Neucha', serif;
     font-size: 1.1em;
   }
   .range{
@@ -771,14 +773,16 @@ option{
     justify-content: space-between;
     align-items: center;
     font-size: 20px;
-    width: 500px;
+    width: 400px;
     padding: 5px;
     border-radius: 3px;
     background-color: #e67e22;
     color: #FEF9EF;
   }
-  .cookScale{
-    max-width: 200px;
+  .range input{
+    cursor: pointer;
+    width: 200px;
+    margin: 0px;
   }
   .random-recipe{
     display: flex;
