@@ -15,6 +15,7 @@ export function getCreate(context) {
   context.loadPartials(commonPartials).partial('../templates/functional/create.hbs')
 }
 export function postCreate(context) {
+  console.log(context)
   const {
     meal,
     ingredients,
@@ -31,10 +32,10 @@ export function postCreate(context) {
     ingrToPrv: x
   });
   let creator = sessionStorage.getItem('user');
-  let stars = `&#9733;`.repeat(Number(cookScale));
+  let stars = `★`.repeat(Number(cookScale));
   let whiteStars = `★`.repeat(Number(10 - cookScale));
 
-  if (validateInput(meal, ingrArr, prepMethod, description, foodImageURL, category)) {
+  if (validateInput(meal, ingrArr, prepMethod, description, foodImageURL)) {
     create({
         meal,
         stars,
@@ -97,7 +98,6 @@ export function getEdit(context) {
     })
 }
 export function postEdit(context) {
-  console.log(context.params.category)
   const {
     meal,
     ingredients,
@@ -259,7 +259,7 @@ export function getFishRecipes(context) {
 }
 
 
-function validateInput(meal, ingredients, prepMethod, description, foodImageURL, category) {
+function validateInput(meal, ingredients, prepMethod, description, foodImageURL) {
   if (meal.length >= 4 && ingredients.length >= 2 && prepMethod.length >= 10 && description.length >= 10 && (foodImageURL.startsWith('http://') || foodImageURL.startsWith('https://'))) {
     return true;
   } else {

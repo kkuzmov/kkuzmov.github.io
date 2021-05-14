@@ -18,14 +18,14 @@ export function getHome(context) {
                         context.loadPartials(commonPartials).partial('../templates/user/home.hbs');
         })
 }
-export function searchMeal(event, context){
-        let searchQuery = event.target.firstElementChild.value;
-        console.log(searchQuery)
+// export function searchMeal(event, context){
+//         let searchQuery = event.target.firstElementChild.value;
+//         console.log(searchQuery)
 
-        // getAll(searchQuery)
-        //         .then(res =>{
-        //                 let searchResult = res.docs.filter(x => x.data().meal.toLowerCase().includes(searchQuery.toLowerCase())).map(x => x = x.data());
-        //                 context.result = searchResult;
-        //                 // context.loadPartials(commonPartials).partial('../templates/functional/searchRes.hbs');
-        //         })
-}
+//         // getAll(searchQuery)
+//         //         .then(res =>{
+//         //                 let searchResult = res.docs.filter(x => x.data().meal.toLowerCase().includes(searchQuery.toLowerCase())).map(x => x = x.data());
+//         //                 context.result = searchResult;
+//         //                 // context.loadPartials(commonPartials).partial('../templates/functional/searchRes.hbs');
+//         //         })
+// }
