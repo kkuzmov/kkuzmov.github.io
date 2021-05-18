@@ -402,12 +402,17 @@ option{
 .details-container a, .details-container a:visited{
   color: #d0e0ca;
 }
+.detailsFoodImage{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .detailsFoodImage img{
   border-radius: 10px;
   object-fit: cover;
-  margin-bottom: 20px;
-  max-height: 100%;
-  max-width: 100%;
+  margin: 20px auto;
+  max-height: 90%;
+  max-width: 90%;
 }
 .detailsIngredients{
   display: flex;
