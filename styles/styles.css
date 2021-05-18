@@ -747,7 +747,7 @@ option{
     font-size: 18px;
   }
   .form-login-register label, .form-create-layout label, .form-edit-recipe label{
-    font-size: 25px;
+    font-size: 30px;
   }
   .form-login-register input:focus, .form-create-layout input:focus, .form-create-layout textarea:focus, .form-create-layout select:focus, .form-edit-recipe input:focus, .form-edit-recipe textarea:focus, .form-edit-recipe select:focus{
     background-color: #FEF9EF;
