@@ -396,6 +396,7 @@ option{
   font-size: 30px;
   display: flex;
   flex-wrap: wrap;
+  margin-left: -6px;
   margin-bottom: 60px;
   padding-bottom: 30px;
 }
@@ -426,7 +427,6 @@ option{
   align-items: center;
   border-radius: 10px;
   background-color: #e67d22a8;
-  width: 100%;
 }
 .list-ingredients{
   list-style:circle;
